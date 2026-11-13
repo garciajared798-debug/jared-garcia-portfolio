@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Vista previa del proyecto BIT">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf9ef"/>
+      <stop offset=".55" stop-color="#f6ecd7"/>
+      <stop offset="1" stop-color="#f1e4c9"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c96a"/>
+      <stop offset=".5" stop-color="#c9a227"/>
+      <stop offset="1" stop-color="#b87333"/>
+    </linearGradient>
+    <linearGradient id="brandSoft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#a9742e"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf7" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#f4e6c0" stop-opacity=".25"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf7"/>
+      <stop offset="1" stop-color="#f7eeda"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#e8c96a" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#e8c96a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#c9a227" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#c9a227" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#b87333" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#b87333" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#8a5a1c" stroke-opacity=".13" stroke-width="1"/>
+    </pattern>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#b8860b" fill-opacity=".16"/>
+    </pattern>
+    <filter id="blurXL" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="70"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="30" stdDeviation="45" flood-color="#6d4613" flood-opacity=".22"/>
+    </filter>
+    <filter id="neon" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+  <ellipse cx="180" cy="80" rx="520" ry="440" fill="url(#glowCyan)" filter="url(#blurXL)"/>
+  <ellipse cx="1470" cy="250" rx="520" ry="460" fill="url(#glowViolet)" filter="url(#blurXL)"/>
+  <ellipse cx="1150" cy="980" rx="520" ry="320" fill="url(#glowPink)" filter="url(#blurXL)"/>
+  <rect x="90" y="540" width="520" height="340" fill="url(#dots)" opacity=".5"/>
+
+  <!-- Brand lockup -->
+  <g>
+    <rect x="104" y="78" width="86" height="86" rx="26" fill="url(#brandSoft)" fill-opacity=".18" stroke="url(#brand)" stroke-width="1.5"/>
+    <rect x="121" y="117" width="11" height="30" rx="5.5" fill="url(#brand)"/>
+    <rect x="141" y="97" width="11" height="50" rx="5.5" fill="url(#brand)"/>
+    <rect x="161" y="108" width="11" height="39" rx="5.5" fill="url(#brand)"/>
+    <text x="214" y="140" font-family="Sora, Manrope, Arial, sans-serif" font-size="68" font-weight="700" letter-spacing="2" fill="#241d12">BIT</text>
+    <rect x="338" y="102" width="68" height="28" rx="14" fill="#8a5a1c" fill-opacity=".07" stroke="#8a5a1c" stroke-opacity=".12"/>
+    <text x="372" y="121" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#6d4613">BETA</text>
+    <text x="106" y="206" font-family="Manrope, Arial, sans-serif" font-size="23" fill="#6b5836">Your games. Your people. Your community.</text>
+    <circle cx="106" cy="259" r="5" fill="#2f8f5b"/>
+    <text x="122" y="266" font-family="Manrope, Arial, sans-serif" font-size="16" font-weight="600" fill="#827255">COMUNIDAD EN LÍNEA</text>
+  </g>
+
+  <!-- Floating chips -->
+  <g filter="url(#softShadow)">
+    <rect x="1298" y="86" width="204" height="52" rx="26" fill="#fffaf0" fill-opacity=".92" stroke="#8a5a1c" stroke-opacity=".12"/>
+    <circle cx="1326" cy="112" r="14" fill="#2f8f5b" fill-opacity=".14"/>
+    <circle cx="1326" cy="112" r="4.5" fill="#2f8f5b"/>
+    <text x="1350" y="118" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="600" fill="#241d12">Chat en vivo</text>
+  </g>
+
+  <!-- App window -->
+  <g filter="url(#softShadow)">
+    <rect x="100" y="318" width="1400" height="720" rx="30" fill="url(#panel)" stroke="#8a5a1c" stroke-opacity=".13"/>
+    <rect x="100" y="318" width="1400" height="64" rx="30" fill="#f3e8d2"/>
+    <rect x="100" y="352" width="1400" height="30" fill="#f3e8d2"/>
+    <circle cx="140" cy="350" r="7" fill="#b5432f" fill-opacity=".8"/>
+    <circle cx="165" cy="350" r="7" fill="#d99a2b" fill-opacity=".8"/>
+    <circle cx="190" cy="350" r="7" fill="#2f8f5b" fill-opacity=".8"/>
+    <rect x="560" y="337" width="480" height="26" rx="13" fill="#8a5a1c" fill-opacity=".055" stroke="#8a5a1c" stroke-opacity=".07"/>
+    <text x="800" y="355" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="13" fill="#7a6a4f">bit-community.app</text>
+    <rect x="1390" y="338" width="76" height="24" rx="12" fill="#2f8f5b" fill-opacity=".12"/>
+    <text x="1428" y="354" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1" fill="#1f6b43">EN VIVO</text>
+
+    <!-- Sidebar -->
+    <rect x="100" y="382" width="310" height="656" fill="#f4ead5"/>
+    <line x1="410" y1="382" x2="410" y2="1038" stroke="#8a5a1c" stroke-opacity=".07"/>
+    <rect x="134" y="416" width="30" height="30" rx="9" fill="url(#brandSoft)" fill-opacity=".2" stroke="url(#brand)" stroke-opacity=".6"/>
+    <rect x="142" y="431" width="4" height="10" rx="2" fill="url(#brand)"/>
+    <rect x="149" y="424" width="4" height="17" rx="2" fill="url(#brand)"/>
+    <rect x="156" y="428" width="4" height="13" rx="2" fill="url(#brand)"/>
+    <text x="177" y="438" font-family="Sora, Arial, sans-serif" font-size="20" font-weight="700" fill="#241d12" letter-spacing="1">BIT</text>
+    <rect x="222" y="421" width="42" height="18" rx="9" fill="#c9a227" fill-opacity=".15"/>
+    <text x="243" y="434" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#8a5a1c" letter-spacing="1">BETA</text>
+
+    <rect x="126" y="482" width="258" height="44" rx="12" fill="#c9a227" fill-opacity=".13" stroke="#c9a227" stroke-opacity=".25"/>
+    <rect x="146" y="499" width="11" height="11" rx="3" fill="#b8860b"/>
+    <text x="170" y="509" font-family="Manrope, Arial, sans-serif" font-size="14" font-weight="600" fill="#241d12">Inicio</text>
+    <circle cx="358" cy="504" r="9" fill="#b87333"/>
+    <text x="358" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">12</text>
+
+    <g fill="#8a5a1c" fill-opacity=".05">
+      <rect x="126" y="540" width="258" height="42" rx="12"/>
+      <rect x="126" y="592" width="258" height="42" rx="12"/>
+      <rect x="126" y="644" width="258" height="42" rx="12"/>
+      <rect x="126" y="696" width="258" height="42" rx="12"/>
+    </g>
+    <g fill="#8a7a5c">
+      <circle cx="151" cy="561" r="6"/>
+      <circle cx="151" cy="613" r="6"/>
+      <circle cx="151" cy="665" r="6"/>
+      <circle cx="151" cy="717" r="6"/>
+    </g>
+    <g fill="#8a5a1c" fill-opacity=".3">
+      <rect x="170" y="556" width="92" height="10" rx="5"/>
+      <rect x="170" y="608" width="112" height="10" rx="5"/>
+      <rect x="170" y="660" width="78" height="10" rx="5"/>
+      <rect x="170" y="712" width="102" height="10" rx="5"/>
+    </g>
+
+    <text x="128" y="782" font-family="Manrope, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2" fill="#827255">TUS GRUPOS</text>
+    <g>
+      <rect x="126" y="800" width="258" height="46" rx="12" fill="#8a5a1c" fill-opacity=".035"/>
+      <rect x="138" y="808" width="30" height="30" rx="9" fill="#c9a227" fill-opacity=".28"/>
+      <text x="153" y="829" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#8a5a1c">🎯</text>
+      <rect x="180" y="812" width="92" height="9" rx="4.5" fill="#8a5a1c" fill-opacity=".4"/>
+      <rect x="180" y="827" width="60" height="7" rx="3.5" fill="#8a5a1c" fill-opacity=".16"/>
+      <circle cx="362" cy="823" r="4" fill="#2f8f5b"/>
+    </g>
+    <g>
+      <rect x="126" y="854" width="258" height="46" rx="12" fill="#8a5a1c" fill-opacity=".02"/>
+      <rect x="138" y="862" width="30" height="30" rx="9" fill="#e8c96a" fill-opacity=".2"/>
+      <text x="153" y="883" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#a9742e">🎮</text>
+      <rect x="180" y="866" width="76" height="9" rx="4.5" fill="#8a5a1c" fill-opacity=".34"/>
+      <rect x="180" y="881" width="54" height="7" rx="3.5" fill="#8a5a1c" fill-opacity=".14"/>
+    </g>
+
+    <rect x="126" y="936" width="258" height="62" rx="14" fill="#8a5a1c" fill-opacity=".035" stroke="#8a5a1c" stroke-opacity=".06"/>
+    <circle cx="154" cy="967" r="16" fill="url(#brandSoft)"/>
+    <text x="154" y="972" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">JG</text>
+    <rect x="180" y="955" width="74" height="9" rx="4.5" fill="#8a5a1c" fill-opacity=".4"/>
+    <rect x="180" y="971" width="48" height="7" rx="3.5" fill="#8a5a1c" fill-opacity=".18"/>
+    <circle cx="358" cy="967" r="5" fill="#2f8f5b"/>
+
+    <!-- Main view -->
+    <text x="450" y="428" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#7a6a4f">YOUR DASHBOARD</text>
+    <text x="450" y="470" font-family="Sora, Arial, sans-serif" font-size="34" font-weight="600" fill="#241d12">Tu comunidad, en un solo lugar</text>
+    <rect x="450" y="494" width="380" height="8" rx="4" fill="#8a5a1c" fill-opacity=".1"/>
+    <rect x="450" y="510" width="270" height="8" rx="4" fill="#8a5a1c" fill-opacity=".06"/>
+
+    <rect x="450" y="548" width="540" height="58" rx="14" fill="#8a5a1c" fill-opacity=".045" stroke="#8a5a1c" stroke-opacity=".08"/>
+    <circle cx="478" cy="577" r="13" fill="url(#brandSoft)"/>
+    <text x="478" y="582" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#fff">N</text>
+    <rect x="502" y="566" width="210" height="8" rx="4" fill="#8a5a1c" fill-opacity=".25"/>
+    <rect x="502" y="581" width="130" height="7" rx="3.5" fill="#8a5a1c" fill-opacity=".1"/>
+    <rect x="900" y="560" width="70" height="32" rx="10" fill="url(#brandSoft)"/>
+    <text x="935" y="581" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Publicar</text>
+
+    <!-- Group hero card -->
+    <rect x="450" y="632" width="540" height="190" rx="20" fill="#fffaf0" stroke="#8a5a1c" stroke-opacity=".08"/>
+    <rect x="450" y="632" width="540" height="88" rx="20" fill="url(#brandSoft)" fill-opacity=".22"/>
+    <rect x="450" y="700" width="540" height="20" fill="#fffaf0"/>
+    <circle cx="492" cy="680" r="24" fill="#c9a227" fill-opacity=".3" stroke="#b8860b" stroke-opacity=".4"/>
+    <text x="492" y="687" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">🎯</text>
+    <text x="530" y="676" font-family="Sora, Arial, sans-serif" font-size="19" font-weight="600" fill="#241d12">Night Shift — VALORANT</text>
+    <circle cx="531" cy="694" r="3.5" fill="#2f8f5b"/>
+    <text x="542" y="699" font-family="Manrope, Arial, sans-serif" font-size="11" fill="#6b5836">12 en línea · sala de voz abierta</text>
+    <rect x="900" y="656" width="62" height="22" rx="11" fill="#2f8f5b" fill-opacity=".14"/>
+    <text x="931" y="671" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#1f6b43">LIVE</text>
+
+    <g>
+      <circle cx="476" cy="752" r="12" fill="#e8c96a" fill-opacity=".35"/>
+      <rect x="496" y="743" width="300" height="30" rx="10" fill="#8a5a1c" fill-opacity=".055"/>
+      <rect x="510" y="753" width="170" height="8" rx="4" fill="#8a5a1c" fill-opacity=".3"/>
+      <circle cx="476" cy="792" r="12" fill="#b87333" fill-opacity=".35"/>
+      <rect x="496" y="783" width="250" height="30" rx="10" fill="#8a5a1c" fill-opacity=".055"/>
+      <rect x="510" y="793" width="140" height="8" rx="4" fill="#8a5a1c" fill-opacity=".26"/>
+    </g>
+    <rect x="450" y="846" width="540" height="62" rx="16" fill="#8a5a1c" fill-opacity=".035" stroke="#8a5a1c" stroke-opacity=".06"/>
+    <circle cx="478" cy="877" r="13" fill="url(#brandSoft)" fill-opacity=".6"/>
+    <rect x="502" y="866" width="180" height="8" rx="4" fill="#8a5a1c" fill-opacity=".22"/>
+    <rect x="502" y="881" width="120" height="7" rx="3.5" fill="#8a5a1c" fill-opacity=".1"/>
+    <rect x="868" y="860" width="100" height="34" rx="11" fill="#8a5a1c" fill-opacity=".07"/>
+    <text x="918" y="882" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="600" fill="#6d4613">Unirse al grupo</text>
+
+    <!-- Right rail -->
+    <rect x="1020" y="412" width="440" height="200" rx="20" fill="#8a5a1c" fill-opacity=".035" stroke="#8a5a1c" stroke-opacity=".08"/>
+    <text x="1046" y="446" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#7a6a4f">AMIGOS EN LÍNEA</text>
+    <g>
+      <circle cx="1050" cy="479" r="14" fill="#e8c96a" fill-opacity=".5"/>
+      <rect x="1074" y="470" width="92" height="9" rx="4.5" fill="#8a5a1c" fill-opacity=".34"/>
+      <rect x="1074" y="485" width="60" height="7" rx="3.5" fill="#8a5a1c" fill-opacity=".14"/>
+      <circle cx="1432" cy="479" r="4" fill="#2f8f5b"/>
+    </g>
+    <g>
+      <circle cx="1050" cy="529" r="14" fill="#c9a227" fill-opacity=".5"/>
+      <rect x="1074" y="520" width="108" height="9" rx="4.5" fill="#8a5a1c" fill-opacity=".3"/>
+      <rect x="1074" y="535" width="72" height="7" rx="3.5" fill="#8a5a1c" fill-opacity=".13"/>
+      <circle cx="1432" cy="529" r="4" fill="#2f8f5b"/>
+    </g>
+    <g>
+      <circle cx="1050" cy="579" r="14" fill="#b87333" fill-opacity=".45"/>
+      <rect x="1074" y="570" width="84" height="9" rx="4.5" fill="#8a5a1c" fill-opacity=".26"/>
+      <rect x="1074" y="585" width="56" height="7" rx="3.5" fill="#8a5a1c" fill-opacity=".12"/>
+      <circle cx="1432" cy="579" r="4" fill="#d99a2b"/>
+    </g>
+
+    <rect x="1020" y="636" width="440" height="238" rx="20" fill="#fbf4e4" stroke="#c9a227" stroke-opacity=".22"/>
+    <rect x="1020" y="636" width="440" height="238" rx="20" fill="url(#glowViolet)" opacity=".14"/>
+    <text x="1046" y="672" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#8a5a1c">SALA DE VOZ</text>
+    <text x="1046" y="704" font-family="Sora, Arial, sans-serif" font-size="22" font-weight="600" fill="#241d12">Lobby · Night Shift</text>
+    <rect x="1046" y="722" width="290" height="8" rx="4" fill="#8a5a1c" fill-opacity=".14"/>
+    <rect x="1046" y="738" width="190" height="8" rx="4" fill="#8a5a1c" fill-opacity=".08"/>
+    <g>
+      <circle cx="1070" cy="795" r="22" fill="url(#brandSoft)"/>
+      <circle cx="1124" cy="795" r="22" fill="#e8c96a" fill-opacity=".35"/>
+      <circle cx="1178" cy="795" r="22" fill="#b87333" fill-opacity=".35"/>
+      <circle cx="1232" cy="795" r="22" fill="#2f8f5b" fill-opacity=".28"/>
+      <circle cx="1286" cy="795" r="22" fill="#8a5a1c" fill-opacity=".06" stroke="#8a5a1c" stroke-opacity=".13"/>
+      <text x="1286" y="801" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="12" fill="#827255">+4</text>
+    </g>
+    <rect x="1046" y="834" width="150" height="30" rx="10" fill="#2f8f5b" fill-opacity=".12"/>
+    <circle cx="1066" cy="849" r="4" fill="#2f8f5b"/>
+    <text x="1080" y="854" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="600" fill="#1f6b43">Conectado</text>
+
+    <rect x="1020" y="896" width="440" height="100" rx="20" fill="#8a5a1c" fill-opacity=".03" stroke="#8a5a1c" stroke-opacity=".06"/>
+    <text x="1046" y="930" font-family="Sora, Arial, sans-serif" font-size="16" font-weight="600" fill="#241d12">Tu próxima partida empieza aquí</text>
+    <rect x="1046" y="944" width="250" height="7" rx="3.5" fill="#8a5a1c" fill-opacity=".12"/>
+    <rect x="1046" y="964" width="110" height="24" rx="8" fill="url(#brandSoft)"/>
+    <text x="1101" y="980" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="10" font-weight="700" fill="#fff">Explorar</text>
+  </g>
+
+  <!-- Bottom caption -->
+  <g>
+    <rect x="100" y="940" width="960" height="0" fill="none"/>
+  </g>
+</svg>

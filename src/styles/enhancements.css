@@ -1,0 +1,413 @@
+/* ============================================================
+   Enhancements — refinamientos del tema claro + interacción
+   Se importa al final para ajustar contraste y sumar efectos
+   de puntero sin tocar la estructura existente.
+   ============================================================ */
+
+/* Superficies principales -------------------------------------- */
+
+.brand-mark {
+  border-color: rgba(232, 201, 106, 0.52);
+  background:
+    linear-gradient(145deg, rgba(232, 201, 106, 0.22), rgba(138, 90, 28, 0.1)),
+    linear-gradient(155deg, #4a3517, #241a0c);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 236, 177, 0.24),
+    0 10px 26px -14px rgba(96, 70, 24, 0.7);
+}
+
+.brand-mark::before {
+  background: radial-gradient(circle, rgba(244, 230, 192, 0.4), transparent 68%);
+}
+
+.brand-mark span {
+  background: linear-gradient(120deg, #f4e6c0, #e8c96a 45%, #c9a227);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.brand-mark i {
+  background: #f4e6c0;
+  box-shadow: 0 0 10px rgba(244, 230, 192, 0.9);
+}
+
+.btn-primary::after {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+}
+
+.site-header.is-scrolled {
+  background: rgba(255, 252, 244, 0.9);
+  border-bottom-color: rgba(154, 118, 44, 0.18);
+}
+
+.marquee {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 253, 247, 0.55),
+    rgba(244, 230, 192, 0.4),
+    rgba(255, 253, 247, 0.55)
+  );
+  border-color: rgba(154, 118, 44, 0.18);
+}
+
+.marquee-item {
+  color: #6b5836;
+}
+
+.price-card,
+.process-step {
+  border-color: rgba(154, 118, 44, 0.26);
+  background: linear-gradient(165deg, rgba(255, 253, 247, 0.94), rgba(250, 244, 231, 0.82));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 20px 48px -36px rgba(96, 70, 24, 0.5);
+}
+
+.price-card.is-featured {
+  border-color: rgba(201, 162, 39, 0.58);
+  background:
+    radial-gradient(340px 220px at 50% 0%, rgba(232, 201, 106, 0.32), transparent 72%),
+    linear-gradient(165deg, rgba(255, 251, 240, 0.97), rgba(248, 236, 209, 0.9));
+  box-shadow:
+    0 34px 80px -46px rgba(166, 124, 31, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+.about-card {
+  border-color: rgba(154, 118, 44, 0.32);
+  background:
+    radial-gradient(360px 240px at 50% 0%, rgba(232, 201, 106, 0.3), transparent 72%),
+    linear-gradient(158deg, rgba(255, 253, 247, 0.96), rgba(248, 238, 216, 0.9));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.98),
+    0 36px 84px -48px rgba(96, 70, 24, 0.55);
+}
+
+.contact-shell {
+  border-color: rgba(154, 118, 44, 0.3);
+  background: linear-gradient(145deg, rgba(255, 253, 247, 0.97), rgba(247, 236, 214, 0.95));
+  box-shadow:
+    0 60px 140px -70px rgba(96, 70, 24, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+.contact-form {
+  padding: clamp(18px, 2.4vw, 26px);
+  border: 1px solid rgba(154, 118, 44, 0.24);
+  border-radius: 22px;
+  background: rgba(255, 253, 247, 0.78);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 22px 50px -42px rgba(96, 70, 24, 0.6);
+}
+
+.field input,
+.field select,
+.field textarea {
+  background: rgba(255, 253, 247, 0.82);
+  border-color: rgba(154, 118, 44, 0.26);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  background: #fffdf7;
+}
+
+.field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%238a5a1c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+}
+
+.future-project {
+  border-color: rgba(166, 124, 31, 0.34);
+  background:
+    radial-gradient(560px 260px at 50% 20%, rgba(232, 201, 106, 0.26), transparent 68%),
+    linear-gradient(165deg, rgba(255, 253, 247, 0.84), rgba(248, 238, 216, 0.7));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 30px 70px -54px rgba(96, 70, 24, 0.5);
+}
+
+.footer {
+  border-top-color: rgba(154, 118, 44, 0.22);
+  background:
+    radial-gradient(700px 320px at 12% 100%, rgba(232, 201, 106, 0.24), transparent 65%),
+    linear-gradient(180deg, rgba(255, 253, 247, 0.88), rgba(247, 238, 219, 0.96));
+}
+
+.footer-made,
+.footer-contact > a,
+.footer-bottom {
+  color: #6b5836;
+}
+
+/* Mock del navegador y teléfono -------------------------------- */
+
+.mock-chrome {
+  background: linear-gradient(180deg, #f8f0de, #efe2c7);
+}
+
+.mock-site {
+  background:
+    radial-gradient(460px 260px at 88% -15%, rgba(232, 201, 106, 0.34), transparent 64%),
+    radial-gradient(320px 240px at 0% 100%, rgba(201, 162, 39, 0.12), transparent 60%),
+    #fffaf0;
+}
+
+.mock-brand-mark {
+  background: linear-gradient(135deg, #6d4613, #d4af37 58%, #f4e6c0);
+  box-shadow: 0 0 10px rgba(201, 162, 39, 0.45);
+}
+
+.mock-headline em {
+  background: linear-gradient(100deg, #8a5a1c, #b8860b 48%, #8a5a1c);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.mock-btn {
+  background: linear-gradient(135deg, #f2e0a4, #d4af37 55%, #c9a227);
+  box-shadow: 0 6px 16px -7px rgba(166, 124, 31, 0.6);
+}
+
+.mock-btn--ghost {
+  background: rgba(255, 253, 247, 0.7);
+  border-color: rgba(154, 118, 44, 0.32);
+  color: #6d4613;
+}
+
+.mock-thumb--one {
+  background:
+    radial-gradient(circle at 70% 25%, rgba(255, 245, 214, 0.75), transparent 38%),
+    linear-gradient(135deg, #f2e0a4, #d4af37 58%, #b8860b);
+}
+
+.mock-thumb--two {
+  background:
+    radial-gradient(circle at 30% 70%, rgba(255, 245, 214, 0.55), transparent 38%),
+    linear-gradient(135deg, #d4a24a, #a9742e 55%, #8a5a1c);
+}
+
+.mock-thumb--three {
+  background:
+    radial-gradient(circle at 70% 30%, rgba(244, 230, 192, 0.5), transparent 40%),
+    linear-gradient(135deg, #8a5a1c, #5d3d12 55%, #3a2a16);
+}
+
+.hv-phone {
+  border-color: rgba(232, 201, 106, 0.55);
+  background: linear-gradient(155deg, #3a2a16, #6d4a1f 55%, #8a5a1c);
+  box-shadow:
+    0 38px 65px -28px rgba(74, 53, 23, 0.55),
+    0 0 0 1px rgba(232, 201, 106, 0.22);
+}
+
+.phone-notch {
+  background: #3a2a16;
+  opacity: 0.92;
+}
+
+.phone-screen {
+  background:
+    radial-gradient(200px 150px at 100% 0%, rgba(232, 201, 106, 0.4), transparent 62%),
+    #fffaf0;
+}
+
+.phone-cta {
+  background: linear-gradient(135deg, #f2e0a4, #d4af37 58%, #c9a227);
+  box-shadow: 0 6px 16px -7px rgba(166, 124, 31, 0.6);
+}
+
+/* ============================================================
+   Interacción con el puntero
+   ============================================================ */
+
+/* Inclinación 3D suave de tarjetas ----------------------------- */
+
+.project-card,
+.about-card,
+.service-card,
+.price-card,
+.process-step {
+  transform: perspective(1100px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transition:
+    opacity 0.85s var(--ease) var(--delay, 0ms),
+    translate 0.85s var(--ease) var(--delay, 0ms),
+    transform 0.45s var(--ease),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+  isolation: isolate;
+}
+
+.project-card:hover,
+.about-card:hover,
+.service-card:hover,
+.price-card:hover,
+.process-step:hover {
+  transform:
+    perspective(1100px)
+    rotateX(var(--tilt-x, 0deg))
+    rotateY(var(--tilt-y, 0deg))
+    translateY(-4px);
+}
+
+/* Foco de luz que sigue al puntero dentro de cada tarjeta ------ */
+
+.price-card,
+.process-step,
+.project-card,
+.about-card,
+.future-project,
+.pricing-note,
+.process-cta {
+  position: relative;
+  isolation: isolate;
+}
+
+.price-card::before,
+.process-step::before,
+.project-card::before,
+.about-card::before,
+.future-project::before,
+.pricing-note::before,
+.process-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  width: 340px;
+  height: 340px;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(244, 230, 192, 0.5),
+    rgba(232, 201, 106, 0.14) 45%,
+    transparent 68%
+  );
+  opacity: 0;
+  transform: translate3d(
+    calc(var(--spot-x, 0px) - 170px),
+    calc(var(--spot-y, 0px) - 170px),
+    0
+  );
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.price-card:hover::before,
+.process-step:hover::before,
+.project-card:hover::before,
+.about-card:hover::before,
+.future-project:hover::before,
+.pricing-note:hover::before,
+.process-cta:hover::before {
+  opacity: 1;
+}
+
+/* La service-card ya usaba ::after: lo reutilizamos como foco. */
+.service-card::after {
+  top: 0;
+  left: 0;
+  right: auto;
+  width: 320px;
+  height: 320px;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(244, 230, 192, 0.45),
+    rgba(232, 201, 106, 0.12) 46%,
+    transparent 68%
+  );
+  transform: translate3d(
+    calc(var(--spot-x, 0px) - 160px),
+    calc(var(--spot-y, 0px) - 160px),
+    0
+  );
+  will-change: transform;
+}
+
+/* Botones magnéticos ------------------------------------------- */
+
+.btn,
+.service-action,
+.menu-toggle {
+  translate: var(--mag-x, 0px) var(--mag-y, 0px);
+  transition:
+    translate 0.3s var(--ease),
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease),
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* El botón del menú móvil no debe desplazarse por el puntero. */
+@media (max-width: 980px) {
+  .menu-toggle {
+    translate: none;
+    transition: none;
+  }
+}
+
+/* Anillo del cursor -------------------------------------------- */
+
+.cursor-ring.is-pressed {
+  width: 22px;
+  height: 22px;
+  border-color: rgba(138, 90, 28, 0.85);
+}
+
+/* Sin puntero fino / movimiento reducido ----------------------- */
+
+@media (hover: none), (pointer: coarse) {
+  .btn,
+  .service-action,
+  .menu-toggle {
+    translate: none;
+  }
+
+  .price-card::before,
+  .process-step::before,
+  .project-card::before,
+  .about-card::before,
+  .future-project::before,
+  .pricing-note::before,
+  .process-cta::before,
+  .service-card::after {
+    display: none;
+  }
+
+  .project-card,
+  .about-card,
+  .service-card,
+  .price-card,
+  .process-step {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .service-action,
+  .menu-toggle {
+    translate: none;
+  }
+
+  .project-card,
+  .about-card,
+  .service-card,
+  .price-card,
+  .process-step,
+  .project-card:hover,
+  .about-card:hover,
+  .service-card:hover,
+  .price-card:hover,
+  .process-step:hover {
+    transform: none;
+  }
+}
