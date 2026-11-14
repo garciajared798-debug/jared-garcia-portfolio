@@ -1,4 +1,5 @@
 import bitCover from '../assets/projects/bit-cover.svg';
+import casaOlivaCover from '../assets/projects/casa-oliva-cover.jpg';
 
 export const site = {
   name: 'Jared García',
@@ -210,6 +211,19 @@ export const projects = [
     image: bitCover,
     imageAlt: 'Vista previa de la plataforma BIT con su interfaz oscura y acentos neón',
     featured: true,
+  },
+  {
+    id: 'casa-oliva',
+    title: 'Casa Oliva — Taberna de mercado',
+    category: 'Proyecto en vivo · Sitio para restaurante',
+    description:
+      'Carta digital para una taberna de mercado: doce platos con buscador y filtros, favoritos que se guardan en el navegador, notas por plato y un pedido que se envía por WhatsApp. Un solo archivo HTML, sin frameworks, con diseño editorial inspirado en los mercados españoles.',
+    tags: ['HTML, CSS y JS', 'Carta digital', 'Pedidos por WhatsApp', 'Responsive'],
+    link: 'https://garciajared798-debug.github.io/casa-oliva/',
+    linkLabel: 'Visitar sitio en vivo',
+    image: casaOlivaCover,
+    imageAlt: 'Collage de platos de Casa Oliva con paella, tacos al pastor, tiramisú y ceviche',
+    featured: false,
   },
 ];
 
